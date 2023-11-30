@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/401b96a213.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/water-mark3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Ashish</span><br>Mahto From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/JEE_0053-2.jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there, I'm Ashish—a 21-year-old enthusiast on a journey of continuous learning and
+                        self-discovery. I've always been captivated by the world's endless possibilities, which led me
+                        to develop a keen interest in acquiring new skills and nurturing my passions.
+                        <br> A Passion for Learning,
+                        The thrill of mastering something new has always been my driving force. Whether it's delving
+                        into the intricate details of web development or exploring the nuances of photography, I'm
+                        constantly seeking out ways to expand my horizons and broaden my knowledge base.
+                        <br>Through the Lens,
+                        When I'm not immersed in lines of code, you'll often find me behind the lens, capturing the
+                        beauty and stories surrounding us. Photography is more than just a hobby for me—it's a way to
+                        freeze moments in time, allowing emotions and memories to be shared and cherished forever.
+                        <br>Front-End Whiz with Back-End Ambitions,
+                        Professionally, I specialize in front-end development, crafting visually appealing and
+                        user-friendly interfaces that seamlessly blend form and function. As I evolve in my journey, I'm
+                        excited to share that I'm also delving into the world of back-end development, adding an extra
+                        layer of depth to my skill set.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <!-- <li><span>C</span></li> -->
+                            <li><span>C++</span></li>
+                            <li><span>UI/UX</span><br>Desingning Web interfaces</li>
+                            <li><span>Web Development</span><br></li>
+                            <li><i class="fa-brands fa-html5"></i>HTML</li>
+                            <li><i class="fa-brands fa-css3"></i>CSS</li>
+                            <li><i class="fa-brands fa-js"></i>Java Script, Jquery</li>
+                            <li><i class="fa-brands fa-bootstrap"></i>BootStrap</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UX</span><br>Desingning Web interfaces</li>
+                            <li><span>Web Development</span><br>Desingning Web/App interfaces</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matric</span><br>Ashok Memorial Public School, Faridabad<br>2018</li>
+                            <li><span>Intermediate</span><br>G.D convent sr. sec. School, Hodal<br>2020</li>
+                            <li><span>B.Tech</span><br>I.T.S Engineering College, Gr. Noida<br>Pursunig</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus! In corporis odit
+                        accusamus sapiente voluptatum earum optio, architecto dolore ea nesciunt vitae eveniet ducimus
+                        doloremque similique labore harum velit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus! In corporis odit
+                        accusamus sapiente voluptatum earum optio, architecto dolore ea nesciunt vitae eveniet ducimus
+                        doloremque similique labore harum velit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Video editor</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus! In corporis odit
+                        accusamus sapiente voluptatum earum optio, architecto dolore ea nesciunt vitae eveniet ducimus
+                        doloremque similique labore harum velit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/weather.jpeg" height="85%">
+                    <div class="layer">
+                        <h3>Weather Web Application</h3>
+                        <p>It allows users to check current weather conditions in different places quickly and easily. It provides up-to-date
+                            information like temperature, humidity, and wind speed. <br>
+                            • Technologies Used: HTML, CSS, JavaScript</p>
+                        <a href="https://mahtoashish.github.io/Weather-Application/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Diary-entry.jpeg">
+                    <div class="layer">
+                        <h3>Everyones diary</h3>
+                        <p>C++ program is designed as a daily diary entry system. Users can interact with the program
+                            to:
+                            <br>
+                            <br>
+                            <span>Add Entry </span>-> Input the date, time, and content of their daily activity, which
+                            is
+                            stored in the
+                            program's memory.
+                            <br>
+                            <br>
+                            <span>Update Entry </span>-> Modify the content, date, or time of an existing entry.
+                            <br>
+                            <br>
+                            <span>Delete Entry </span>-> Remove an entry based on its date or identifier.
+                            <br>
+                            <br>
+                            <span>Save Diary </span>-> Choose a filename to save their diary entries as a text document
+                            on
+                            their
+                            computer.
+                        </p>
+                        <a href="https://github.com/mahtoashish/Everyones-Diary" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/ai1.jpeg">
+                    <div class="layer">
+                        <h3>Ai Image Generator</h3>
+                        <p>My website leverages state-of-the-art AI technology to autonomously generate tailored images according to
+                            user input and preferences. <br> This streamlined process eliminates the necessity for manual image creation,
+                            providing users with a swift and efficient means to acquire visually captivating content. <br>
+                            • Technologies Used: HTML, CSS, JavaScript</p>
+                        <a href="https://mahtoashish.github.io/ai-generated-image/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ----------------------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+
+                    <p><i class="fa-solid fa-paper-plane"></i> ashishmahto491@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8448248821</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/ashish-mahto-2b7aa319b/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mahtoashish" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ashish21.pvt/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/ashishmahto491" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="image/Ashish Mahto resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                copyright @Ashish
+            </p>
+        </div>
+    </div>
+    <script>
+        // var tablinks = document.getElementsByClassName("tab-links");
+        // var tabcontents = document.getElementsByClassName("tab-contents");
+        // function opentab(tabname) {
+        //     for (tablink of tablinks) {
+        //         tablink.classList.remove("active-link");
+        //     }
+        //     for (tabcontent of tabcontents) {
+        //         tablink.classList.remove("active-tab");
+        //     }
+        //     event.currentTarget.classList.add("active-link");
+        //     document.getElementById(tabname).classList.add("active-tab");
+        // }
+        function opentab(evt, tabname) {
+            var i, tablinks, tabcontents;
+            tabcontents = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className.replace("active-link", "");
+            }
+            document.getElementById(tabname).style.display = "block";
+            evt.currentTarget.className += " ", "active";
+        }
+        // function opentab(tabname) {
+        //     var tabnames = document.querySelectorAll('.tab-contents');
+        //     sections.forEach(function(tab-contents) {
+        //         if (section.id === sectionId) {
+        //             section.style.display = 'block';
+        //         } else {
+        //             section.style.display = 'none';
+        //         }
+        //     });
+        // }
+    </script>
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemen.style.right = "0";
+        }
+        function closemenu() {
+            sidemen.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyinpf51-i0MMf4Kp_NABwe5Cuf0drzkOhOwNTdueUbOzA3eu4ZFxunAlldQm8nfDnm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent  successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    from.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
